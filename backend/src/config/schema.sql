@@ -1,0 +1,30 @@
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL.
+    password VARCHAR(255) NOT NULL,
+    create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS subjects (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    user_id INT REFERENCES users(id) ON DELETE CASCASDE,
+    create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE if NOT EXISTS study_sessions  (
+    id SERIAL PRIMARY KEY,
+    subjects_id INT REFERENCES subjects(id) ON DELETE CASCASDE,
+    duration INT NOT NULL,
+    notes TEXT,
+    session_date DATE NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS quizzes (
+    id SERIAL PRIMARY KEY,
+    subjects_id INT REFERENCES subjects(ID) ON DELETE CASCASDE,
+    score INT NOT NULL,
+    total_marks INT NOT NULL,
+    quize_date DATE NOT NULL
+);
