@@ -1,4 +1,4 @@
-import pool from "../config/db.js";
+import pool from "../config/DB.js";
 import { getLearningData } from "../services/analytics/analyticsService.js";
 import { buildLearningCoach } from "../services/intelligence/learningCoachService.js";
 export const getOverviewAnalytics = async (

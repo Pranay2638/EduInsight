@@ -1,4 +1,4 @@
-import pool from "../config/db.js";
+import pool from "../config/DB.js";
 
 export const createStudySession = async(req,res) => {
   try {
