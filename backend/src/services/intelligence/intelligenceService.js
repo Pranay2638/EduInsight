@@ -9,7 +9,7 @@ const intelligenceAPI = axios.create({
 export default intelligenceAPI;
 
 const AI_SERVICE_URL =
-  process.env.INTELLIGENCE_SERVICE_URL;
+  `${process.env.INTELLIGENCE_SERVICE_URL}/api/intelligence`
 
 export const askEduInsight = async (snapshot, question) => {
   const response = await axios.post(
