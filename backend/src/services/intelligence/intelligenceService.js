@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const intelligenceAPI = axios.create({
-    baseURL: process.env.INTELLIGENCE_SERVICE_URL || "http://127.0.0.1:8000/api/intelligence",
+    baseURL: process.env.INTELLIGENCE_SERVICE_URL
+    ? `${process.env.INTELLIGENCE_SERVICE_URL}/api/intelligence`
+    :  "http://127.0.0.1:8000/api/intelligence",
 });
 
 export default intelligenceAPI;
