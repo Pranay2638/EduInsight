@@ -43,7 +43,7 @@
 // export default protect;
 
 import jwt from "jsonwebtoken";
-import pool from "../config/db.js";
+import pool from "../config/DB.js";
 
 const protect = async (req, res, next) => {
   try {
