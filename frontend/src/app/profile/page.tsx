@@ -32,40 +32,43 @@ export default function ProfilePage() {
 
   if (loading) {
     return (
-      <div className="space-y-8 animate-pulse">
+      <AppShell>
+        <div className="space-y-8 animate-pulse">
 
-        <div className="h-32 rounded-xl bg-muted" />
+          <div className="h-32 rounded-xl bg-muted" />
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {[...Array(6)].map((_, index) => (
-            <div
-              key={index}
-              className="h-32 rounded-xl bg-muted"
-            />
-          ))}
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {[...Array(6)].map((_, index) => (
+              <div
+                key={index}
+                className="h-32 rounded-xl bg-muted"
+              />
+            ))}
+          </div>
+
         </div>
-
-      </div>
+      </AppShell>
     )
   }
 
   if (!profile) {
     return (
-      <div className="rounded-xl border p-8 text-center">
+      <AppShell>
+        <div className="rounded-xl border p-8 text-center">
 
-        <h2 className="text-xl font-semibold">
+          <h2 className="text-xl font-semibold">
 
-            Unable to load profile
+              Unable to load profile
 
-        </h2>
+          </h2>
 
-        <p className="text-muted-foreground mt-2">
+          <p className="text-muted-foreground mt-2">
 
-            Please refresh the page or try again later.
+              Please refresh the page or try again later.
 
-        </p>
-
-    </div>
+          </p>
+        </div>
+      </AppShell>
     );
   }
 

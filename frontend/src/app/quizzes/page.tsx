@@ -148,11 +148,11 @@ export default function QuizzesPage() {
 
           <div>
 
-            <h1 className="text-4xl font-bold text-slate-700">
+            <h1 className="text-4xl font-bold text-slate-700 dark:text-slate-100">
               Quizzes
             </h1>
 
-            <p className="text-slate-500">
+            <p className="text-slate-500 dark:text-slate-200">
               Track your quiz performance.
             </p>
 

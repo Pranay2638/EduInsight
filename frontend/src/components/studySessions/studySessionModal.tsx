@@ -137,6 +137,7 @@ export default function StudySessionModal({
                 py-2
                 rounded-xl
                 border
+                bg-blue-400 hover:bg-blue-500
               "
             >
               Cancel
@@ -163,7 +164,7 @@ export default function StudySessionModal({
 
       ) : (
 
-        <div className="space-y-6">
+        <div className="space-y-6 text-slate-600">
 
           <div>
 
@@ -334,10 +335,11 @@ export default function StudySessionModal({
               onClick={onClose}
 
               className="
-                border
+                text-slate-100
                 rounded-xl
                 px-5
                 py-2
+                bg-red-400 hover:bg-red-500
               "
 
             >

@@ -98,7 +98,7 @@ export default function WeeklyReportCard({
               </p>
 
               <h3 className="font-semibold">
-                {report.performance.strongest.name}
+                {report.performance?.strongest?.name ?? "No data available"}
               </h3>
 
             </div>
@@ -116,7 +116,7 @@ export default function WeeklyReportCard({
               </p>
 
               <h3 className="font-semibold">
-                {report.performance.weakest.name}
+                {report.performance?.weakest?.name ?? "No data available"}
               </h3>
 
             </div>

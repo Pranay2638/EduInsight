@@ -121,6 +121,8 @@ export default function SubjectsPage() {
       );
     }
   };
+  console.log("Subject data checkout:", subjects);
+
 
   return (
     <AppShell>
@@ -130,7 +132,7 @@ export default function SubjectsPage() {
 
           <div>
 
-            <h1 className="text-4xl font-bold text-gray-700">
+            <h1 className="text-4xl font-bold text-slate-700 dark:text-slate-200">
               Subjects
             </h1>
 
@@ -187,12 +189,16 @@ export default function SubjectsPage() {
 
                   <div>
 
-                    <h2 className="text-2xl font-bold text-slate-900">
+                    <h2 className="text-xl font-bold text-slate-900">
                       {subject.name}
                     </h2>
 
                     <p className="text-slate-500 mt-1">
-                      Subject ID : {subject.id}
+                      {new Date(
+                        subject.create_at
+                      ).toLocaleDateString("en-US",{month: "short",
+                          day: "numeric",
+                          year: "numeric",})}
                     </p>
 
                   </div>

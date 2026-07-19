@@ -148,6 +148,7 @@ export default function QuizModal({
                 rounded-xl
                 px-5
                 py-2
+                bg-blue-400 hover:bg-blue-500
               "
             >
               Cancel
@@ -178,7 +179,7 @@ export default function QuizModal({
 
           <div>
 
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-2xl font-bold text-slate-600">
 
               {
                 mode === "create"
@@ -196,7 +197,7 @@ export default function QuizModal({
 
           </div>
 
-          <div>
+          <div className="text-slate-600">
 
             <label className="block mb-2 font-medium">
               Subject
@@ -236,7 +237,7 @@ export default function QuizModal({
 
           </div>
 
-          <div>
+          <div className="text-slate-600">
 
             <label className="block mb-2 font-medium">
               Quiz Name
@@ -260,7 +261,7 @@ export default function QuizModal({
 
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 text-slate-600">
 
             <div>
 
@@ -313,7 +314,7 @@ export default function QuizModal({
 
           </div>
 
-          <div>
+          <div className="text-slate-600">
 
             <label className="block mb-2 font-medium">
               Quiz Date
@@ -345,6 +346,7 @@ export default function QuizModal({
                 rounded-xl
                 px-5
                 py-2
+                bg-red-400 hover:bg-red-500
               "
             >
               Cancel

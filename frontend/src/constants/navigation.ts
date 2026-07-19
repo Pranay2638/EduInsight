@@ -48,9 +48,9 @@ export const bottomNavigation = [
     href: "/profile",
     icon: User,
   },
-  {
-    title: "Settings",
-    href: "/settings",
-    icon: Settings,
-  },
+  // {
+  //   title: "Settings",
+  //   href: "/settings",
+  //   icon: Settings,
+  // },
 ];

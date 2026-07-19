@@ -62,7 +62,7 @@ export default function ChatAssistantCard() {
         <h2 className="text-xl font-semibold">Ask EduInsight</h2>
       </div>
 
-      <p className="mt-4 text-slate-600 dark:text-slate-300">
+      <p className="mt-4 text-slate-600">
         Ask questions about your learning journey and receive personalized AI
         insights.
       </p>
@@ -74,7 +74,7 @@ export default function ChatAssistantCard() {
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
           placeholder="Ask anything about your learning..."
-          className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-emerald-500 dark:border-slate-700 dark:bg-slate-900"
+          className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-emerald-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
         />
 
         <div className="mt-3 flex justify-end">
@@ -108,7 +108,7 @@ export default function ChatAssistantCard() {
       {/* Suggestions */}
       {!response && !loading && (
         <div className="mt-8">
-          <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-200">
+          <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-600">
             Try asking
           </h3>
 
@@ -135,7 +135,7 @@ export default function ChatAssistantCard() {
               <h3 className="font-semibold">Answer</h3>
             </div>
 
-            <p className="text-slate-700 dark:text-slate-300">
+            <p className="text-slate-700">
               {response.answer}
             </p>
           </div>
@@ -146,7 +146,7 @@ export default function ChatAssistantCard() {
               <h3 className="font-semibold">Reasoning</h3>
             </div>
 
-            <p className="text-slate-700 dark:text-slate-300">
+            <p className="text-slate-700">
               {response.reasoning}
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function ChatAssistantCard() {
               <h3 className="font-semibold">Recommendation</h3>
             </div>
 
-            <p className="text-slate-700 dark:text-slate-300">
+            <p className="text-slate-700">
               {response.recommendation}
             </p>
           </div>

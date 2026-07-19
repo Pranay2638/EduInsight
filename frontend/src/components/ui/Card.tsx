@@ -22,6 +22,7 @@ export default function Card({
                 border-slate-200
                 shadow-sm
                 p-6
+                dark:text-slate-700
                 `,
                 className
             )}

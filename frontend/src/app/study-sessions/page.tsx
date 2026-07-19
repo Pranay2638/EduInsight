@@ -154,11 +154,11 @@ const handleDelete = async () => {
 
           <div>
 
-            <h1 className="text-4xl font-bold text-slate-700">
+            <h1 className="text-4xl font-bold text-slate-700 dark:text-slate-100">
               Study Sessions
             </h1>
 
-            <p className="text-slate-500">
+            <p className="text-slate-500 dark:text-slate-200">
               Track your daily learning progress.
             </p>
 

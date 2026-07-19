@@ -119,6 +119,7 @@ export default function SignupForm() {
         rounded-3xl
         shadow-lg
         p-8
+        text-slate-900
       "
     >
 

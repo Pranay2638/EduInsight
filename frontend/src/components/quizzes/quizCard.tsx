@@ -67,7 +67,7 @@ export default function QuizCard({
 
       <div className="mt-6">
 
-        <div className="flex justify-between">
+        <div className="flex justify-between dark:text-slate-500">
 
           <span className="font-semibold">
             Score

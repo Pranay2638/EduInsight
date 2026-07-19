@@ -30,7 +30,7 @@ export default function AILearningCoach({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
     >
-      <Card className="bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white">
+      <Card className="bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white dark:text-white">
 
         {/* Header */}
 

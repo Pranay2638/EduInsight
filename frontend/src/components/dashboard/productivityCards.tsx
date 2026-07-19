@@ -67,9 +67,9 @@ export default function ProductivityCards({
               bg-white
               rounded-2xl
               p-6
-              border
               shadow-sm
               text-black
+              transition-all duration-200 ease-out hover:-translate-y-1.5 hover:scale-[1.02]
             "
           >
 

@@ -92,6 +92,7 @@ export default function LoginForm() {
         rounded-3xl
         shadow-lg
         p-8
+        text-slate-900
       "
     >
       {/* Header */}

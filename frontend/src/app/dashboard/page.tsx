@@ -4,7 +4,7 @@ import { StudyTrendData,OverviewData,SubjectAnalysisData } from "@/types/analyti
 import OverviewCards from "@/components/dashboard/OverviewCards";
 import StudyTrendChart from "@/components/dashboard/studyTrendChart";
 import AILearningCoach from "@/components/dashboard/AILearingCoach";
-import { LearningCoachData } from "@/types/intelligence";
+import { LearningCoachData } from "@/types/analytics";
 import { getLearningCoach, getProductivity } from "@/services/analyticsService";
 import PageHeader from "@/components/ui/PageHeader"
 import {

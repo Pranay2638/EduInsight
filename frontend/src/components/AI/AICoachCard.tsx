@@ -59,23 +59,9 @@ export default function AICoachCard({
 
           </h3>
 
-          <p className="mt-2 text-slate-600 dark:text-slate-300">
+          <p className="mt-2 text-slate-600 dark:text-slate-600">
 
             {report.coach.message}
-
-          </p>
-
-        </div>
-
-        <div className="flex gap-3">
-
-          <Target
-            className="text-blue-500"
-          />
-
-          <p>
-
-            {report.coach.recommendation}
 
           </p>
 
@@ -86,15 +72,15 @@ export default function AICoachCard({
           <Lightbulb className="text-amber-500" />
 
           <div>
-
-            <p className="font-medium">
+            <p className="font-semibold">
               AI Recommendation
             </p>
 
-            <p className="text-slate-600 dark:text-slate-300">
-              Follow this recommendation consistently to improve your performance.
-            </p>
+            <p className="text-slate-600 dark:text-slate-600">
 
+              {report.coach.recommendation}
+
+            </p>
           </div>
 
         </div>

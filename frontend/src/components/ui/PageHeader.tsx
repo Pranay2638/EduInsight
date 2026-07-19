@@ -32,7 +32,8 @@ export default function PageHeader({
             <p
                 className="
                 mt-2
-                text-slate-500
+                text-slate-800
+                dark:text-slate-300
                 "
             >
                 {subtitle}

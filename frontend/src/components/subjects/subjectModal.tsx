@@ -98,8 +98,8 @@ export default function SubjectModal({
                 py-2
                 rounded-xl
                 border
-                border-slate-300
-                hover:bg-slate-100
+                bg-blue-400
+                hover:bg-blue-500
               "
             >
               Cancel
@@ -124,7 +124,7 @@ export default function SubjectModal({
 
         </div>
       ) : (
-        <div className="space-y-6">
+        <div className="space-y-6 text-slate-600">
 
           <div>
 
