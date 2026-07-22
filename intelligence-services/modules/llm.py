@@ -1,6 +1,6 @@
 import json
 import os
-
+import traceback
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
@@ -15,6 +15,8 @@ load_dotenv()
 client = genai.Client(
     api_key=os.getenv("GEMINI_API_KEY")
 )
+print("Gemini key exists:", bool(os.getenv("GEMINI_API_KEY")))
+print("Model:", os.getenv("GEMINI_MODEL"))
 
 
 def generate_ai_coach(snapshot):
@@ -69,8 +71,7 @@ def ask_eduinsight(snapshot, question):
         response = client.models.generate_content(
 
             model=os.getenv(
-                "GEMINI_MODEL",
-                "gemini-3.5-flash"
+                "gemini-3.1-flash-lite"
             ),
 
             contents=prompt,
@@ -91,13 +92,12 @@ def ask_eduinsight(snapshot, question):
 
     except Exception as e:
 
-        print(f"Chat Error: {e}")
+        traceback.print_exc()
 
         return ChatResponse(
 
-            answer=(
-                "I'm sorry, I couldn't answer your question right now. "
-                "Please try again in a moment."
-            )
+        answer="I'm sorry, I couldn't answer your question right now.",
+        reasoning="An internal error occurred while generating the response.",
+        recommendation="Please try again in a moment."
 
         )

@@ -11,6 +11,11 @@ export default intelligenceAPI;
 const AI_SERVICE_URL =
   `${process.env.INTELLIGENCE_SERVICE_URL}api/intelligence`
 
+console.log(
+  "AI SERVICE URL:",
+  process.env.INTELLIGENCE_SERVICE_URL
+);
+
 export const askEduInsight = async (snapshot, question) => {
   const response = await axios.post(
     `${AI_SERVICE_URL}/chat`,
@@ -25,3 +30,8 @@ export const askEduInsight = async (snapshot, question) => {
 
   return response.data;
 };
+
+console.log(
+  "Calling:",
+  `${process.env.INTELLIGENCE_SERVICE_URL}api/intelligence/chat`
+);

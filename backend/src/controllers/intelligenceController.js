@@ -77,7 +77,15 @@ export const chatWithAI = async (req, res) => {
 
     } catch (error) {
 
-        console.error(error);
+         console.error("===== AI CHAT ERROR =====");
+    console.error(error);
+
+    if (error.response) {
+        console.error("Status:", error.response.status);
+        console.error("Data:", error.response.data);
+    }
+
+    console.error("Stack:", error.stack);
 
         res.status(500).json({
             message: "Failed to generate AI response."
